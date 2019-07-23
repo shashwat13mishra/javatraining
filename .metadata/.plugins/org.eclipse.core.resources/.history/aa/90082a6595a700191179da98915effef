@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Employee Info</title>
+</head>
+<body>
+
+<form action ="employee" method="get">
+
+String <input name=Name value="Name"> <br>
+Double <input name=Price value="Price"> <br>
+int <input name=QoH value="QoH"> <br>
+
+<input value="Save" type="submit">
+
+
+</form>
+</body>
+</html>

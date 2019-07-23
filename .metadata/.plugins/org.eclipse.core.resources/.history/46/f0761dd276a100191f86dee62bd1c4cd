@@ -1,0 +1,31 @@
+/*
+ * Create a class called Circle with following members :
+an int type data member called radius
+a constructor to accept the radius
+a method called getShapeName() which returns "Circle"
+a method named computeArea() which returns the area of a the circle
+Create a class CircleApp (with a main) which instantiates and 
+displays areas of circle objects with different radii
+In both of the above classes, should the user be able to directly access the fields?
+What would be the impact of providing setter methods in these classes? Say if we were to introduce a 'draw' method?
+Complete the above before reading/proceeding further
+ */
+
+
+public class Circle {
+double radius;
+Circle(double radius){
+	this.radius=radius;
+}
+
+public String getShapeName()
+{
+	return "Circle";
+}
+
+public double computeArea()
+{
+	double r=this.radius;
+	return 31*r*r;
+}
+}

@@ -1,0 +1,7 @@
+package com.visa.training.jdbc;
+
+
+//DAO class has CRUD + Query methods
+public class ProductDAO {
+
+}

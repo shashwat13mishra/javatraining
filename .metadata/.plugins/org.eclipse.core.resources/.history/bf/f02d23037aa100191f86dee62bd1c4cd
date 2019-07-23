@@ -1,0 +1,16 @@
+/*
+ * Create a class called ShapesApp which wants to maintain an array (mixed) which 
+ * contains objects of type both rectangle and circle (and any other shapes that 
+ * will get developed later).
+The ShapesApp class wants to have a method 'displayShape' to which you should be
+ able to pass objects of type both circle and rectangle (and any other shapes that
+  will get developed later).
+Create a class Shape to which both Circle and Rectangle can substitute. What
+ abstraction should Shape class have?
+ */
+public class ShapesApp {
+	Object ar[]=new Object(10);
+	public String displayShape(Object o) {
+		
+	}
+}

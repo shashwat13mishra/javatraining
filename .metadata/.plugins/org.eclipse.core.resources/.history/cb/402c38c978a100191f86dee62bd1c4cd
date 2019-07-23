@@ -1,0 +1,18 @@
+
+public class Rectangle {
+double radius;
+Rectangle(double height,double width){
+	this.height=height;
+	this.width=width;
+}
+
+public String getShapeName()
+{
+	return "Rcetangle";
+}
+
+public double computeArea()
+{
+	return height*width;
+}
+}

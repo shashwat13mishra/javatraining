@@ -1,0 +1,15 @@
+
+public class ChemicalElementApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ChemicalElement obj= new ChemicalElement();
+		obj.atomicNumber=3;
+		obj.symbolicName="Zn";
+		obj.fullName="Zinc";
+		System.out.println("IsMetal : "+ obj.isMetal(obj.atomicNumber));
+		System.out.println("IsTransitionMetal : "+ obj.isTransitionMetal(obj.atomicNumber));
+		System.out.println("IsAlkaliMetal : "+ obj.isAlkaliMetal(obj.atomicNumber));
+	}
+
+}

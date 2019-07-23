@@ -1,0 +1,79 @@
+/*
+ * Design and implement chemical elements
+
+The periodic table of chemical elements classifies and displays all chemical elements.
+ Each chemical element has a unique symbolic name and atomic number (number of protons)
+ . Chemcial elements are grouped together by common characteristics 
+ (alkali metal, poor metal, ...) called the chemical series.
+
+Examples of chemical elements:
+
+H : Hydrogen with atomic number 1.
+O : Oxygen with atomic number 8.
+K: Potassium with atomic number 19. It is an alkali metal.
+Zn: Zinc with atomic number 30. It is a transition metal.
+Ga: Gallium with atomic number 31. It is a metal.
+We consider the following chemical series:
+
+Alkali metals are all chemical element with atomic number 3, 11, 19, 37, 55, or 87
+Transition metals are all chemical elements with atomic number from 
+21 to 31, 39 to 48, 72 to 80, and 104 to 112.
+Metals are all chemical elements with atomic number 
+13, 49, 50, 81, 82, 83, 113, 114, 115, or 116.
+
+Design and implement a class ChemicalElement. It should hold data about its atomicNumber,
+ symbolicName and its fullName.
+Let the class have the following methods : isAlkaliMetal
+,isTransitionMetal and isMetal , each method returns a boolean 
+based on the atomicNumber of that element.
+Also create a class ChemicalElementApp with a main where you create a few instances of 
+ChememicalElement and test the behaviour of the methods.
+
+ */
+public class ChemicalElement {
+	int atomicNumber;
+	String symbolicName;
+	String fullName;
+	
+	ChemicalElement(int atomicNumber,String symbolicName,
+			String fullName){
+		this.atomicNumber=atomicNumber;
+		this.symbolicName=symbolicName;
+		this.fullName=fullName;
+	}
+	
+	
+	
+	public boolean equals(Object o) {
+		ChemicalElement p = (ChemicalElement) o;
+		if(p.atomicNumber==this.atomicNumber && p.symbolicName==this.symbolicName 
+				&& p.fullName==this.fullName)
+			return true;
+		return false;
+	}
+	
+	public boolean isAlkaliMetal(int num) {
+		int ar[]= {3, 11, 19, 37, 55, 87};
+		for(int i=0;i<ar.length;i++) {
+			if(num == ar[i])
+				return true;
+		}
+		return false;
+	}
+
+
+	public boolean isTransitionMetal(int num) {
+		if((num>=21 && num<=31) || (num>=39 && num<=48) || (num>=72 && num<=80) || (num>=104 && num<=112))
+			return true;
+		return false;
+	}
+	
+	public boolean isMetal(int num) {
+		int ar[]= {3, 49, 50, 81, 82, 83, 113, 114, 115, 116};
+		for(int i=0;i<ar.length;i++) {
+			if(num == ar[i])
+				return true;
+		}
+		return false;
+	}
+}
